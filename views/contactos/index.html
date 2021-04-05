@@ -1,0 +1,19 @@
+{{
+__author__ = "María Andrea Vignau (mavignau@gmail.com)"
+__copyright__ = "(C) 2016 María Andrea Vignau. GNU GPL 3."
+}}
+{{extend 'layout.html'}}
+<h1>Contacto</h1>
+{{if expte_rows:}}
+    <div id='expte' class="col-md-5 well well-lg">
+        <b>
+            Es parte en:
+        </b>
+        {{=expte_rows}}
+    </div>
+    <div class="col-md-7">
+        {{=grid}}
+    </div>
+{{else:}}
+    {{=grid}}
+{{pass}}

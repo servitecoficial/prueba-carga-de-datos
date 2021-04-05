@@ -1,0 +1,12 @@
+{{
+__author__ = "María Andrea Vignau (mavignau@gmail.com)"
+__copyright__ = "(C) 2016 María Andrea Vignau. GNU GPL 3."
+}}
+{{extend 'layout.html'}}
+<h1>Editar ingreso de agenda</h1>
+<div id='expte' class="col-md-3 well well-lg">
+    {{=LOAD('expedientes','vista_expediente',args=[expte_id])}}
+</div>
+<div class="col-md-9">
+    {{=form}}
+</div>
